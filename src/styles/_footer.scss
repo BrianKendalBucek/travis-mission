@@ -1,0 +1,52 @@
+@import './_variables';
+
+.footer {
+  background-color: rgb(162, 205, 249);
+  padding: 20px 100px;
+  color: $footer-text-color;
+  font-family: 'Arial', sans-serif; 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+
+  .footerContent {
+    display: flex;
+    justify-content: space-between; 
+    align-items: start;
+    // margin-bottom: 30px;
+    margin: auto; 
+
+    .linkSection,
+    .socialMediaSection {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // padding: 0 15px;
+
+      a {
+        color: white;
+        margin: 15px; 
+        text-decoration: none;
+        font-size: 1.5rem; 
+        transition: color 0.3s ease; 
+
+        &:hover {
+          color: $footer-link-hover-color;
+          text-decoration: underline; 
+        }
+      }
+    }
+  }
+
+  .copyRightSection {
+    font-size: 1.5rem;
+    opacity: 0.8; 
+    margin-top: 20px; 
+  }
+}
+
+.mapSection {
+  iframe {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0; // Adjust as needed
+  }
+}
