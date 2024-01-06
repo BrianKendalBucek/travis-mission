@@ -12,12 +12,12 @@
     color: $text-color-light;
     padding: $padding-default;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: $about-header-text-shadow;
     h1 {
       font-size: $font-size-heading;
       margin: 0;
       padding: $padding-default;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: $about-header-h1-background-color;
     }
     p {
       font-size: $font-size-paragraph;
@@ -45,8 +45,8 @@
         max-width: calc(50% - 2rem);
         img {
           border-radius: 50%;
-          width: 300px;
-          height: 300px;
+          width: $image-size;
+          height: $image-size;
           object-fit: cover;
         }
         h3 {

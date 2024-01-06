@@ -1,37 +1,50 @@
 // Header Colors and Styles
-$header-background-color: #fff;
+$header-background-color: #3fa34d;
 $header-text-color: #333;
-$header-hover-color: #007bff;
+$header-hover-color: #3fa34d; 
 $header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$header-font-family: 'Raleway', sans-serif;
 
 // Footer Colors and Styles
-$footer-background-color: #f8f9fa;
+$footer-background-color: #3fa34d;
 $footer-text-color: #333;
-$footer-link-color: #007bff;
-$footer-link-hover-color: #0056b3;
+$footer-link-color: #3fa34d; 
+$footer-link-hover-color: #2e7d32; 
+$footer-box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+$footer-padding: 20px 100px;
+$footer-font-size: 1.5rem;
 
 // Global Styles
 $link-color: $header-text-color;
 $link-hover-color: $header-hover-color;
 $text-color: $footer-text-color;
 
-$bg-image-hero: '/lisa.jpg';
-$bg-image-worship: '/pablo.jpg';
+$bg-image-hero: '/jungle.jpg';
+$bg-image-worship: '/junglehike.jpg';
 $bg-image-bible: '/bible.jpg';
 $bg-image-community: '/community.jpg';
 $bg-image-baptism: '/baptism.jpg';
+$bg-image-junglehike: '/junglehike.jpg';
+$bg-image-donations: '/donations.png';
 
 $bg-position-center: 50% 40%;
 $bg-position-worship: 50% 35%;
 $bg-position-bible: 50% 65%;
+$bg-position-junglehike: 50% 50%;
+$bg-position-donations: 50% 50%;
 
 $padding-default: 50px 20px;
 $padding-sections: 4rem;
 
 $text-color-light: white;
-$text-color-dark: rgb(91, 87, 81);
-$text-color-primary: rgb(132, 174, 224);
+$text-color-dark: lightgrey;
+$text-color-primary: #3fa34d; 
 
 $font-size-heading: 8rem;
 $font-size-subheading: 4rem;
 $font-size-paragraph: 1.5rem;
+
+$about-header-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+$about-header-h1-background-color: rgba(0, 0, 0, 0.5);
+
+$image-size: 300px;

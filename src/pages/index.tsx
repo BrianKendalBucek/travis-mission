@@ -10,7 +10,7 @@ export default function Home() {
     <div className="homePage">
       <Hero />
       <About />
-      <div className="worship"></div>
+      <div className="junglehike"></div>
       <Events />
       <div className="bible"></div>
       <Sermons />

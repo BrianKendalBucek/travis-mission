@@ -1,6 +1,6 @@
 @import 'variables';
 
-.hero, .worship, .bible, .community, .baptism {
+.hero, .worship, .junglehike, .bible, .community, .baptism {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -8,8 +8,22 @@
   height: 20rem;
 }
 
+.donations {
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: $padding-default;
+  height: 60rem;
+}
+
 .hero {
-  background-image: url($bg-image-hero);
+  // background-image: url($bg-image-hero);
+  background-image: linear-gradient(
+    to bottom, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(255, 255, 255, 0) 20%
+  ),
+  url($bg-image-hero);
   background-position: $bg-position-center;
   h2 {
     color: $text-color-light;
@@ -21,7 +35,7 @@
   }
 }
 
-.worship, .bible, .community, .baptism {
+.worship, .junglehike, .bible, .community, .baptism, .donations {
   margin: 5rem 0;
   h2, p {
     color: $text-color-light;
@@ -31,6 +45,11 @@
 .worship {
   background-image: url($bg-image-worship);
   background-position: $bg-position-worship;
+}
+
+.junglehike {
+  background-image: url($bg-image-junglehike);
+  background-position: $bg-position-junglehike;
 }
 
 .bible {
@@ -45,6 +64,12 @@
 
 .baptism {
   background-image: url($bg-image-baptism);
+  background-position: $bg-position-worship;
+}
+
+// eventually separate to donations doc
+.donations {
+  background-image: url($bg-image-donations);
   background-position: $bg-position-worship;
 }
 
@@ -68,4 +93,5 @@
 
 .sermon-videos {
   display: flex;
+  justify-content: space-evenly;
 }

@@ -9,7 +9,7 @@ const videoUrls = [
 export default function Sermons() {
   return (
     <section className="sermons">
-      <h2>Sermones Recientes</h2>
+      <h2>Recent Sermons</h2>
       <div className="sermon-videos">
         {videoUrls.map((url, index) => (
           <iframe

@@ -19,6 +19,9 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           <li className="navItem">
             <Link href="/about">About</Link>
           </li>
+          <li className="navItem">
+            <Link href="/donations">Donations</Link>
+          </li>
         </ul>
       </nav>
     </header>
