@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function LeadershipTeam() {
   return (
@@ -11,11 +12,11 @@ export default function LeadershipTeam() {
       </p>
       <div className="leadership-list">
         <div className="leader-profile">
-          <img src="/don.jpg" alt="Leader 1" />
+          <Image className="leader-profile-img" src="/don.jpg" alt="Leader 1" width={300} height={300} />
           <h3>Pastor Travis Reid</h3>
         </div>
         <div className="leader-profile">
-          <img src="betty.jpg" alt="Leader 2" />
+          <Image className="leader-profile-img" src="/betty.jpg" alt="Leader 2" width={300} height={300} />
           <h3>Pastora Paulina Reid</h3>
         </div>
       </div>

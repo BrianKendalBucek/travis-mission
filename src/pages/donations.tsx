@@ -2,8 +2,6 @@ import React from "react";
 // import MissionStatement from "@/components/about/MissionStatement";
 // import CommunityInvolvement from "@/components/about/CommunityInvolvement";
 // import LeadershipTeam from "@/components/about/LeadershipTeam";
-import "../styles/_home.scss";
-import "../styles/_about.scss";
 import Hero from "@/components/home/Hero";
 
 export default function Donations() {

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MissionStatement() {
   return (
-    <div className="mission-statement brief-desc">
+    <div className="about">
       <p>
         At Travis and Paulina&apos;s Church, our mission is to spread the love and
         teachings of Jesus Christ to all corners of the world. We are committed

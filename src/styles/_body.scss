@@ -1,0 +1,194 @@
+@import "variables";
+@import "mixins";
+
+.worship {
+  @include bg-properties($bg-image-worship, $bg-position-worship);
+}
+.junglehike {
+  @include bg-properties($bg-image-junglehike, $bg-position-junglehike);
+}
+.bible {
+  @include bg-properties($bg-image-bible, $bg-position-bible);
+}
+.community {
+  @include bg-properties($bg-image-community, $bg-position-worship);
+}
+.baptism {
+  @include bg-properties($bg-image-baptism, $bg-position-worship);
+}
+.donations {
+  @include bg-properties($bg-image-donations, $bg-position-worship);
+}
+
+.worship,
+.junglehike,
+.bible,
+.community,
+.baptism {
+  @include shared-element-styles;
+}
+.donations {
+  @include shared-element-styles(60rem);
+}
+
+.about,
+.events,
+.sermons,
+.community-involvement,
+.leadership-team {
+  @include responsive-text-padding;
+}
+
+.about {
+  padding: 2rem 40rem;
+
+  @media (max-width: 1988px) {
+    padding: 4rem;
+  }
+}
+
+.sermon-videos,
+.events {
+  margin-bottom: 5rem;
+}
+
+.sermon-videos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 8rem;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+}
+
+.sermon-videos iframe {
+  width: 25vw;
+  height: 25vh;
+  margin: 1rem;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+  }
+
+  @include phone {
+    width: 85vw;
+  }
+}
+
+.events iframe {
+  border: solid 1px #777;
+  width: 80vw;
+  height: 900px;
+  max-width: 90vw;
+
+  @media (max-width: 600px) {
+    height: 300px;
+  }
+}
+
+.about-us {
+  text-align: center;
+  font-size: $font-size-paragraph;
+  color: $text-color-primary;
+
+  .about-us-header {
+    background-image: url($bg-image-hero);
+    background-size: cover;
+    background-position: $bg-position-center;
+    color: $text-color-light;
+    padding: $padding-default;
+    margin-bottom: 2rem;
+    text-shadow: $about-header-text-shadow;
+    h1 {
+      font-size: $font-size-heading;
+      margin: 0;
+      padding: $padding-default;
+      background-color: $about-header-h1-background-color;
+    }
+    p {
+      font-size: $font-size-paragraph;
+    }
+  }
+}
+
+.leadership-team {
+  .leadership-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+
+    @include tablet {
+      margin-top: 3rem;
+    }
+
+    .leader-profile {
+      text-align: center;
+      margin: 1rem;
+      margin-bottom: 2rem;
+      flex: 1;
+      max-width: calc(50% - 2rem);
+
+      @include tablet {
+        max-width: 100%;
+      }
+
+      .leader-profile-img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+
+        @media (min-width: 1500px) {
+          width: 500px;
+          height: 500px;
+        }
+
+        @include tablet {
+          width: 200px;
+          height: 200px;
+        }
+
+        @include phone {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
+.brief-desc {
+  padding: 0 5rem;
+
+  @media (max-width: 1111px) {
+    padding: 0 2rem;
+  }
+
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
+
+.columns {
+  display: flex;
+
+  @media (max-width: 1870px) {
+    flex-direction: column;
+  }
+}
+
+.column {
+  padding: 0 15rem;
+  @include tablet {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
