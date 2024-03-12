@@ -1,26 +1,15 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
+import styles from "../styles/Footer.module.scss";
 
 const Footer: React.FC = () => {
-  // const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
   return (
-    <footer className="footer">
-      <div className="footerContent">
-        {/* <div className="mapSection">
-          <iframe
-            width="600"
-            height="450"
-            style={{ border: 0 }}
-            loading="lazy"
-            allowFullScreen
-            referrerPolicy="no-referrer-when-downgrade"
-            src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=9.845323,-83.940137`}
-          ></iframe>
-        </div> */}
-        <div className="socialMediaSection">
-          <Link href="/about">About Us</Link>
+    <footer className={styles.footer}>
+      <div className={styles.footerContent}>
+        <div className={styles.socialMediaSection}>
+          <Link href="/about">About</Link>
           {/* <a href="#!">Contact</a>
           <a href="#!">Privacy Policy</a> */}
           <a href="#!">
@@ -33,7 +22,7 @@ const Footer: React.FC = () => {
             <FaInstagram />
           </a>
         </div>
-        <div className="copyRightSection">
+        <div className={styles.copyRightSection}>
           © {new Date().getFullYear()} Super Fe
         </div>
       </div>

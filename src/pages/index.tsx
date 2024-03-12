@@ -1,8 +1,8 @@
 import React from "react";
 import Hero from "@/components/home/Hero";
-import About from "@/components/home/About";
-import Events from "@/components/home/Events";
-import Sermons from "@/components/home/Sermons";
+// import About from "@/components/home/About";
+// import Events from "@/components/home/Events";
+// import Sermons from "@/components/home/Sermons";
 import "../styles/_home.scss";
 
 export default function Home() {
@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <div className="homePage">
       <Hero title={heroTitle} backgroundImage={heroBackgroundImage} />
-      <About />
+      {/* <About /> */}
       <div className="junglehike"></div>
-      <Events />
+      {/* <Events /> */}
       <div className="bible"></div>
-      <Sermons />
+      {/* <Sermons /> */}
     </div>
   );
 }
