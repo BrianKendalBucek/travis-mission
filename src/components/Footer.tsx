@@ -1,14 +1,14 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
-import styles from "../styles/Footer.module.scss";
+// import styles from "../styles/Footer.module.scss";
 
 const Footer: React.FC = () => {
 
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footerContent}>
-        <div className={styles.socialMediaSection}>
+    <footer className="footer">
+      <div className="footerContent">
+        <div className="socialMediaSection">
           <Link href="/about">About</Link>
           {/* <a href="#!">Contact</a>
           <a href="#!">Privacy Policy</a> */}
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             <FaInstagram />
           </a>
         </div>
-        <div className={styles.copyRightSection}>
+        <div className="copyRightSection">
           © {new Date().getFullYear()} Super Fe
         </div>
       </div>
