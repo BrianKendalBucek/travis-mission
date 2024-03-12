@@ -3,12 +3,15 @@ import Hero from "@/components/home/Hero";
 import About from "@/components/home/About";
 import Events from "@/components/home/Events";
 import Sermons from "@/components/home/Sermons";
-import '../styles/_home.scss';
+import "../styles/_home.scss";
 
 export default function Home() {
+  const heroTitle = "Welcome to the Jungle";
+  const heroBackgroundImage = "/jungle.jpg";
+
   return (
     <div className="homePage">
-      <Hero />
+      <Hero title={heroTitle} backgroundImage={heroBackgroundImage} />
       <About />
       <div className="junglehike"></div>
       <Events />

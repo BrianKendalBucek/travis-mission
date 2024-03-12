@@ -4,12 +4,15 @@ import CommunityInvolvement from "@/components/about/CommunityInvolvement";
 import LeadershipTeam from "@/components/about/LeadershipTeam";
 import "../styles/_home.scss";
 import "../styles/_about.scss";
-import HeroAbout from "@/components/about/HeroAbout";
+import Hero from "@/components/home/Hero";
 
 export default function AboutUs() {
+  const heroTitle = "About";
+  const heroBackgroundImage = "/jungle.jpg";
+
   return (
     <div className="about-us">
-      <HeroAbout />
+      <Hero title={heroTitle} backgroundImage={heroBackgroundImage} />
       <div className="about-space">
         <MissionStatement />
         <div className="baptism"></div>

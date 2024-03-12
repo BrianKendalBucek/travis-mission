@@ -4,13 +4,19 @@ import React from "react";
 // import LeadershipTeam from "@/components/about/LeadershipTeam";
 import "../styles/_home.scss";
 import "../styles/_about.scss";
-
-import HeroDonations from "@/components/donations/HeroDonations";
+import Hero from "@/components/home/Hero";
 
 export default function Donations() {
+  // FIX .env
+  const heroTitle = "Donations";
+  const heroBackgroundImage = "/jungle.jpg";
+
   return (
     <div className="about-us">
-      <HeroDonations />
+      <Hero
+        title={heroTitle}
+        backgroundImage={heroBackgroundImage}
+      />
       <div className="about-space">
         <div className="donations"></div>
         {/* <MissionStatement /> */}

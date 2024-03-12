@@ -2,11 +2,6 @@
 
 .header {
   background-color: $header-background-color;
-  // background: linear-gradient(
-  //   to bottom,
-  //   $header-background-color 85%,
-  //   rgba($header-background-color, 0) 99%
-  // );
   box-shadow: $header-box-shadow;
   padding: 0.5rem 1rem;
   border-bottom: 20px solid darken($header-background-color, 10%);
